@@ -1,19 +1,26 @@
 package main
 
 import (
+	"fmt"
 	"io"
 	"log"
+	"math/rand"
 	"net/http"
 )
 
 func main() {
-	// Hello world, the web server
+	baseUrl := "https://musclewiki.com/exercises/male"
 
-	helloHandler := func(w http.ResponseWriter, req *http.Request) {
-		io.WriteString(w, "Hello, world!\n")
+	workouts := []string{"chest", "shoulders", "traps", "biceps"}
+
+	workoutHandler := func(w http.ResponseWriter, req *http.Request) {
+
+		num := rand.Intn(len(workouts))
+
+		io.WriteString(w, fmt.Sprintf("%s/%s", baseUrl, workouts[num]))
 	}
 
-	http.HandleFunc("/hello", helloHandler)
-	log.Println("Listing for requests at http://localhost:8000/hello")
+	http.HandleFunc("/workout", workoutHandler)
+	log.Println("Listing for requests at http://localhost:8000/workout")
 	log.Fatal(http.ListenAndServe(":8000", nil))
 }
