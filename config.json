@@ -1,0 +1,21 @@
+{
+    "AllWorkouts": [
+        "chest",
+        "shoulders",
+        "traps",
+        "traps-middle",
+        "biceps",
+        "triceps",
+        "forearms",
+        "lats",
+        "obliques",
+        "lowerback",
+        "abdominals",
+        "glutes",
+        "quads",
+        "hamstrings",
+        "calves"
+    ],
+    "BaseUrl": "https://musclewiki.com/exercises/male",
+    "SlidingWindow": 10
+}
