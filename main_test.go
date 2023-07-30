@@ -36,6 +36,6 @@ func TestAppendCsvAdvanced(t *testing.T) {
 func TestReadJson(t *testing.T) {
 	workouts := readJson("config.json")
 
-	fmt.Printf("All workouts: %v \n", workouts.AllWorkouts)
+	fmt.Printf("All Options: %v \n", workouts.AllOptions)
 	fmt.Printf("Workouts Base URL: %s \n", workouts.BaseUrl)
 }
