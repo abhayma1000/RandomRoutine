@@ -1,3 +1,5 @@
+[![GitHub Super-Linter](https://github.com/abhayma1000/RandomRoutine/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+
 # Random Routine
 
 This repo is for people looking to generate a random action without repeating for a while and saving it all in a file
